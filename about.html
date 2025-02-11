@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Summaries and Notes</title>
+    <style>
+        /* ✅ إعدادات عامة */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #e8f5e9, #c8e6c9);
+            color: #2e7d32;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* ✅ الهيدر */
+        header {
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            background: linear-gradient(45deg, #388e3c, #2e7d32);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* ✅ صندوق المحتوى */
+        .content {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            width: 90%;
+            text-align: left;
+        }
+
+        .content h2 {
+            color: #1b5e20;
+        }
+
+        .content p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* ✅ زر الرجوع */
+        .back-btn {
+            margin-top: 20px;
+            display: inline-block;
+            padding: 10px 20px;
+            background: #388e3c;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        .back-btn:hover {
+            background: #2e7d32;
+        }
+
+        /* ✅ تحسين التصميم للهواتف */
+        @media (max-width: 768px) {
+            .content {
+                width: 95%;
+                padding: 20px;
+            }
+
+            .content p {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>📖 About Summaries & Notes</header>
+
+    <div class="content">
+        <h2>Welcome to Summaries & Notes</h2>
+        <p>
+            Summaries & Notes is a platform designed to help students and learners easily access
+            lecture summaries and notes for various subjects. Our goal is to provide **well-organized, 
+            high-quality, and easily downloadable materials** to support your education.
+        </p>
+
+        <h2>Features:</h2>
+        <p>✔ Organized lecture notes for 8 subjects</p>
+        <p>✔ Simple and easy-to-use interface</p>
+        <p>✔ Mobile-friendly design</p>
+
+        <h2>Founder:</h2>
+        <p><strong>YOUR NAME</strong></p>
+    </div>
+
+    <!-- ✅ زر الرجوع للصفحة الرئيسية -->
+    <a href="index.html" class="back-btn">⬅ Back to Home</a>
+
+</body>
+</html>
