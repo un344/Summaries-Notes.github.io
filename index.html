@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summaries and Notes</title>
+    <style>
+        /* ✅ إعدادات عامة */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #e8f5e9, #c8e6c9);
+            color: #2e7d32;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        /* ✅ الهيدر */
+        header {
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            background: linear-gradient(45deg, #388e3c, #2e7d32);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* ✅ تصميم الشبكة الرئيسية */
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            width: 90%;
+            max-width: 1000px;
+        }
+
+        /* ✅ تصميم كل خانة لمادة */
+        .subject {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            color: #2e7d32;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 120px;
+            transition: 0.3s ease-in-out;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .subject:hover {
+            background: #c8e6c9;
+            transform: scale(1.05);
+        }
+
+        /* ✅ تحسين التصميم للهواتف */
+        @media (max-width: 768px) {
+            body {
+                height: auto;
+                padding: 20px;
+            }
+
+            .container {
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            }
+
+            .subject {
+                font-size: 16px;
+                height: 100px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>📚 Summaries & Notes</header>
+
+    <div class="container">
+        <a href="intermediate accounting.html" class="subject">📖 Intermediate accounting</a>
+        <a href="economic.html" class="subject">📖 Economic</a>
+        <a href="inferential Statistics.html" class="subject">📖 Inferential Statistics</a>
+        <a href="public finance.html" class="subject">📖 Public finance</a>
+        <a href="marketing.html" class="subject">📖 Marketing</a>
+        <a href="political science.html" class="subject">📖 Political science</a>
+        <a href="AIS.html" class="subject">📖 AIS</a>
+        <a href="english.html" class="subject">📖 English</a>
+    </div>
+
+</body>
+
+</html>
