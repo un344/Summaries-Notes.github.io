@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
     <title>Summaries and Notes</title>
     <style>
         /* ✅ إعدادات عامة */
@@ -129,12 +130,48 @@
                 font-size: 0.9em;
             }
         }
+
+        /* ✅ وضع ليلي */
+        .dark-mode {
+            background: #1e1e1e;
+            color: #f5f5f5;
+        }
+
+        .dark-mode .subject {
+            background: #333;
+            color: white;
+        }
+
+        .dark-mode .subject:hover {
+            background: #555;
+        }
+
+        .dark-mode .content {
+            background: #2c2c2c;
+            color: white;
+        }
+
+        .dark-mode .founder {
+            border-top: 2px solid #4caf50;
+        }
     </style>
 </head>
 
 <body>
 
-    <header>📚 Summaries & Notes</header>
+    <header>📚 Summaries & Notes </header>
+    <button id="themeButton" onclick="toggleTheme()" style="
+    margin-bottom: 15px; 
+    padding: 10px 20px; 
+    border: none; 
+    background: #388e3c; 
+    color: white; 
+    font-size: 16px; 
+    border-radius: 8px; 
+    cursor: pointer;">
+        🌙 Dark Mode
+    </button>
+
 
     <div class="container">
         <a href="intermediate accounting.html" class="subject">📖 Intermediate accounting</a>
@@ -151,9 +188,9 @@
     <div class="founder">
         by: <strong>YOUR NAME</strong>
     </div>
-    <a href="about.html" class="telegram-btn" target="_blank">
-        <span class="tg-icon">?</span>
-        
+    <a href="https://t.me/your_channel" class="telegram-btn" target="_blank">
+        <span class="tg-icon">✈️</span>
+        انضم لقناتنا
     </a>
 </body>
 
