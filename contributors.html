@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
     <title>Contributors - Summaries & Notes</title>
     <style>
         /* ✅ إعدادات عامة */
@@ -108,27 +109,6 @@
         button:hover {
             background: #2e7d32;
         }
-
-        /* ✅ زر الوضع الليلي */
-        #themeButton {
-            margin-bottom: 15px;
-            padding: 10px 20px;
-            border: none;
-            background: #388e3c;
-            color: white;
-            font-size: 16px;
-            border-radius: 8px;
-            cursor: pointer;
-            transition: 0.3s ease-in-out;
-        }
-
-        .dark-mode #themeButton {
-    margin-bottom: 15px;
-    padding: 6px 12px;  /* تم تصغير الحجم */
-    font-size: 14px;     /* تصغير النص قليلاً */
-    border-radius: 6px;
-}
-
         /* ✅ زر الرجوع */
         .back-btn {
             margin-top: 15px;
@@ -203,19 +183,7 @@
                 </tr>`;
                 tableBody.innerHTML += row;
             });
-        }
-
-        function toggleTheme() {
-            let body = document.body;
-            body.classList.toggle("dark-mode");
-
-            let button = document.getElementById("themeButton");
-            if (body.classList.contains("dark-mode")) {
-                button.textContent = "🌞 Light Mode";
-            } else {
-                button.textContent = "🌙 Dark Mode";
-            }
-        }
+   
     </script>
 
 </body>
