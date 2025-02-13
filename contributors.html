@@ -23,32 +23,6 @@
             transition: 0.3s ease-in-out;
         }
 
-        /* ✅ الوضع الليلي */
-        .dark-mode {
-            background: #1e1e1e;
-            color: #f5f5f5;
-        }
-
-        .dark-mode .container {
-            background: #333;
-            color: white;
-            border: 1px solid #444;
-        }
-
-        .dark-mode table, .dark-mode th, .dark-mode td {
-            border: 1px solid #555;
-        }
-
-        .dark-mode th {
-            background: #444;
-        }
-
-        .dark-mode input, .dark-mode button {
-            background: #444;
-            color: white;
-            border: 1px solid #666;
-        }
-
         /* ✅ صندوق المحتوى */
         .container {
             background: white;
@@ -87,14 +61,72 @@
             background: #388e3c;
             color: white;
         }
-          .back-btn:hover {
+
+        /* ✅ إدخال المتعاونين */
+        input, button {
+            width: 90%;
+            padding: 12px;
+            margin-top: 10px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 16px;
+            transition: 0.3s ease-in-out;
+        }
+
+        button {
+            background: #388e3c;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
             background: #2e7d32;
+        }
+
+        /* ✅ زر الرجوع */
+        .back-btn {
+            margin-top: 15px;
+            display: inline-block;
+            padding: 10px 20px;
+            background: #388e3c;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: 0.3s ease-in-out;
+        }
+
+        .back-btn:hover {
+            background: #2e7d32;
+        }
+         /* ✅ الوضع الليلي */
+        .dark-mode {
+            background: #1e1e1e;
+            color: #f5f5f5;
+        }
+
+        .dark-mode .container {
+            background: #333;
+            color: white;
+            border: 1px solid #444;
+        }
+
+        .dark-mode table, .dark-mode th, .dark-mode td {
+            border: 1px solid #555;
+        }
+
+        .dark-mode th {
+            background: #444;
+        }
+
+        .dark-mode input, .dark-mode button {
+            background: #444;
+            color: white;
+            border: 1px solid #666;
         }
     </style>
 </head>
 <body>
-
-    <button id="themeButton" onclick="toggleTheme()">🌙 Dark Mode</button>
 
     <header>🤝 Our Contributors</header>
 
@@ -149,7 +181,7 @@
                 </tr>`;
                 tableBody.innerHTML += row;
             });
-   
+        }
     </script>
 
 </body>
