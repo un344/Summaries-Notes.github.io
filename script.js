@@ -1,7 +1,4 @@
-// ✅ إخفاء شاشة التحميل بعد تحميل الصفحة
-window.onload = function() {
-    document.getElementById("loading-screen").style.display = "none";
-};
+
 // ✅ رسالة ترحيب عند تحميل الصفحة لأول مرة
 window.onload = function () {
     if (!sessionStorage.getItem("visited")) {
