@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -35,9 +34,7 @@
             border: 1px solid #444;
         }
 
-        .dark-mode table,
-        .dark-mode th,
-        .dark-mode td {
+        .dark-mode table, .dark-mode th, .dark-mode td {
             border: 1px solid #555;
         }
 
@@ -45,8 +42,7 @@
             background: #444;
         }
 
-        .dark-mode input,
-        .dark-mode button {
+        .dark-mode input, .dark-mode button {
             background: #444;
             color: white;
             border: 1px solid #666;
@@ -63,23 +59,27 @@
             transition: 0.3s ease-in-out;
         }
 
-        /* ✅ جدول المتعاونين */
+        /* ✅ جعل الجدول أكثر توافقًا مع الأجهزة الصغيرة */
+        .table-container {
+            width: 100%;
+            overflow-x: auto;
+        }
+
         table {
             width: 100%;
             border-collapse: collapse;
             margin-top: 15px;
+            table-layout: fixed;
         }
 
-        table,
-        th,
-        td {
+        table, th, td {
             border: 1px solid #ddd;
         }
 
-        th,
-        td {
+        th, td {
             padding: 10px;
             text-align: center;
+            word-wrap: break-word;
         }
 
         th {
@@ -87,11 +87,10 @@
             color: white;
         }
 
-        /* ✅ فورم إضافة متعاون */
-        input,
-        button {
+        /* ✅ إدخال المتعاونين */
+        input, button {
             width: 90%;
-            padding: 10px;
+            padding: 12px;
             margin-top: 10px;
             border: 1px solid #ccc;
             border-radius: 6px;
@@ -110,7 +109,7 @@
             background: #2e7d32;
         }
 
-        /* ✅ زر تغيير الوضع */
+        /* ✅ زر الوضع الليلي */
         #themeButton {
             margin-bottom: 15px;
             padding: 10px 20px;
@@ -144,7 +143,6 @@
         }
     </style>
 </head>
-
 <body>
 
     <button id="themeButton" onclick="toggleTheme()">🌙 Dark Mode</button>
@@ -153,23 +151,20 @@
 
     <div class="container">
         <h3>📜 Contributors List</h3>
-        <table>
-            <thead>
-                <tr>
-                    <th>#</th>
-                    <th>Name</th>
-                    <th>Role</th>
-                </tr>
-                <tr>
-                    <th>1</th>
-                    <th>mahmoud</th>
-                    <th>Role</th>
-                </tr>
-            </thead>
-            <tbody id="contributorList">
-                <!-- Contributors will be added here dynamically -->
-            </tbody>
-        </table>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Name</th>
+                        <th>Role</th>
+                    </tr>
+                </thead>
+                <tbody id="contributorList">
+                    <!-- Contributors will be added here dynamically -->
+                </tbody>
+            </table>
+        </div>
     </div>
 
     <a href="index.html" class="back-btn">⬅ Back to Home</a>
@@ -219,6 +214,10 @@
             }
         }
     </script>
+
+</body>
+</html>
+
 
 </body>
 
