@@ -154,12 +154,30 @@
         .dark-mode .founder {
             border-top: 2px solid #4caf50;
         }
+            /* ✅ تصميم الزر */
+    .btn {
+        display: inline-block;
+        padding: 15px 25px;
+        font-size: 18px;
+        color: white;
+        background: #388e3c;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        text-decoration: none;
+        transition: 0.3s ease-in-out;
+    }
+
+    .btn:hover {
+        background: #2e7d32;
+    }
     </style>
 </head>
 
 <body>
 
     <header>📚 Summaries & Notes </header>
+    <a href="contributors.html" class="btn">👥 View Contributors</a>
     <button id="themeButton" onclick="toggleTheme()" style="
     margin-bottom: 15px; 
     padding: 10px 20px; 
