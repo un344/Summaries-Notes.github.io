@@ -2,7 +2,7 @@
 // ✅ رسالة ترحيب عند تحميل الصفحة لأول مرة
 window.onload = function () {
     if (!sessionStorage.getItem("visited")) {
-        alert("Welcome to Summaries & Notes! 🚀");
+        alert("Welcome to UnKnown 🚀");
         sessionStorage.setItem("visited", true);
     }
 };
